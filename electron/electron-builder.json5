@@ -18,15 +18,17 @@
     "artifactName": "${productName}-Mac-${version}-Installer.${ext}"
   },
   "win": {
+    "forceCodeSigning": false,
+    "signtoolOptions": null,
     "target": [
       {
-        "target": "nsis",
+        "target": "dir",
         "arch": [
           "x64"
         ]
       }
     ],
-    "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
+    "artifactName": "${productName}.${ext}"
   },
   "nsis": {
     "oneClick": false,
